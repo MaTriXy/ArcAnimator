@@ -1,5 +1,5 @@
 # ArcAnimator
-ArcAnimator helps to create arc transition animation: 2.3+
+ArcAnimator helps to create arc transition animation: 14+
 
 <img width="270" height="480" src="http://i.imgur.com/DSiQxbg.gif" />|<img width="270" height="480" src="http://i.imgur.com/aLcLrGk.gif" />
 
@@ -12,6 +12,12 @@ ArcAnimator Demo   |   TransitionLoop Demo*
 
 Usage
 ===
+Add the library to your project:
+```groovy
+  compile 'com.github.asyl.animation:arcanimator:1.0.0'
+```
+
+Then use it in your project code:
 ```java
   //set up clipView and coordinates where clipView will move
   ArcAnimator.createArcAnimator(clipView, endX, endY, DEGREE, SIDE)
@@ -24,9 +30,25 @@ Usage
                     .start();
 ```
 
+Download
+===
+
+[![JitPack](https://img.shields.io/github/tag/asyl/ArcAnimator.svg?label=maven)](https://jitpack.io/#asyl/ArcAnimator)
+
+To include this library in your project add to your build.gradle:
+
+```gradle
+	repositories {
+	    maven { url "https://jitpack.io" }
+	}
+	
+	dependencies {
+	    compile 'com.github.asyl:ArcAnimator:v1.0.0'
+	}
+```
+
 Dependency
 ===
-- Library uses Jake Wharton's <a href="https://github.com/JakeWharton/NineOldAndroids/">NineOldAndroids</a> to support 2.3.+ devices.
 - Ozodrukh's <a href="https://github.com/ozodrukh/CircularReveal">CircularReveal</a> helped to create awesome TransitionLoop Demo
 
 Thanks
