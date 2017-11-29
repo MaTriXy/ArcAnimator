@@ -80,7 +80,7 @@ public class ArcTestFragment extends Fragment {
             mElement.setTranslationX(startX);
             mElement.setTranslationY(startY);
 
-            ArcAnimator arcAnimator = ArcAnimator.createArcAnimator(mElement, mParent, Float.parseFloat(mDegreeEditor.getText().toString()), mSide)
+            ArcAnimator arcAnimator = ArcAnimator.Companion.createArcAnimator(mElement, mParent, Float.parseFloat(mDegreeEditor.getText().toString()), mSide)
                     .setDuration(Integer.parseInt(mDurationEditor.getText().toString()));
             arcAnimator.start();
             mArcDebugView.drawArcAnimator(arcAnimator);

@@ -68,7 +68,7 @@ public class TransitionLoopFragment extends Fragment {
 
             endBlueX = mParent.getRight() / 2;
             endBlueY = (int) (mParent.getBottom() * 0.8f);
-            ArcAnimator arcAnimator = ArcAnimator.createArcAnimator(mBlue, endBlueX,
+            ArcAnimator arcAnimator = ArcAnimator.Companion.createArcAnimator(mBlue, endBlueX,
                     endBlueY, 90, Side.LEFT)
                     .setDuration(500);
             arcAnimator.addListener(new SimpleListener() {
@@ -197,7 +197,7 @@ public class TransitionLoopFragment extends Fragment {
 
     void returnBlue() {
         mBlue.setVisibility(View.VISIBLE);
-        ArcAnimator arcAnimator = ArcAnimator.createArcAnimator(mBlue, startBlueX,
+        ArcAnimator arcAnimator = ArcAnimator.Companion.createArcAnimator(mBlue, startBlueX,
                 startBlueY, 90, Side.LEFT)
                 .setDuration(500);
         arcAnimator.start();
